@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: teal;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #51ff51;
+  font-size: 45px;
+}
+
+.border {
+  border: 2px solid red !important;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.clock img {
+  width: 100%;
+  height: 100%;
+}
+
+.main div.second {
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  top: 12.9%;
+  left: 49.2%;
+  background-color: rgb(219, 23, 23);
+  transform-origin: bottom !important;
+  /* transform: rotate(90deg); */
+  z-index: 998;
+}
+
+.main div.minute {
+  position: absolute;
+  width: 4px;
+  height: 120px;
+  top: 9.9%;
+  left: 49.2%;
+  background-color: rgb(35, 33, 33);
+  /* transform: rotate(90deg); */
+  transform-origin: bottom !important;
+}
+
+.main div.hour {
+  position: absolute;
+  width: 4px;
+  height: 80px;
+  top: 23%;
+  left: 49.2%;
+  background-color: rgb(37, 35, 35);
+  transform-origin: bottom !important;
+  /* transform: rotate(108deg); */
+  z-index: 997;
+}
+
+.triangle {
+  width: 10px;
+  height: 10px;
+  background-color: #51ff51;
+  position: absolute;
+  left: -3px;
+}
+
+.main div.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  z-index: 999;
+  border-radius: 50%;
+}
